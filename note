@@ -1,0 +1,34 @@
+#HTML5
+Learning Outcomes
+On the successful completion of this module, you should be able to;
+ Describe the process for setting up an HTML project. 
+Identify the must-have tags for designing a webpage using HTML.
+Explain the function of the span tag.
+Recall some self-closing tags.
+Explain the importance of element attributes.
+Discuss the process for adding lists to a website.
+Outline the process for creating a table.
+Identify some semantic elements.
+
+Lesson Summary
+An HTML website must have an HTML, body, title, and head tag. HTML elements are made of opening and closing tags, and the content to be displayed between them.
+Naming the main HTML file ‘index.html’ gives a web server an indication of which file to run first. The doctype tells the browser the HTML version of a website and helps it interpret the HTML code.
+While the body tag contains the content that is displayed on a webpage, the head tag is used to store information like the meta, which is not supposed to be seen by visitors.
+The div tag is the main tag used to create and structure elements in HTML. Span tags are used to separate content, to make them easier to select.
+There are six heading sizes, h1 to h6, which h1 being the largest. Self-closing tags like the line break and horizontal rule, do not require a closing tag.
+Element attributes provide a browser with additional information about an HTML element. Anchor tags are used to add links to websites.
+The image tag requires ‘source’ and ‘alt’ attributes. There are two major list types in HTML; ordered list and unordered list.
+The table, table row, table head, and table data tags are required to create a table using HTML. Semantic elements clearly define the nature and purpose of webpage content.
+
+
+#CSS
+Learning Outcomes
+On the successful completion of this module, you should be able to;
+Explain the function of CSS.
+Recall the process of selecting elements using CSS.
+Describe the process for changing background and font colours.
+Explain the process of adding fonts to a website.
+Identify values for the position and float CSS properties.
+Define combinators.
+Recall some methods for designing responsive websites.
+Explain the CSS box model.
