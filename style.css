@@ -1,4 +1,7 @@
-/* .green{
+/* 
+Comment
+
+.green{
     background-color: green;
 }
 .h6{
@@ -22,11 +25,492 @@ color: white;
 } */
 
 /*
-Comment
-*/
+Color
+
 body{
-    font-family:zc
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 h1,h6 ,h4{
     background-color: purple
 }
+*/
+
+/*
+.blue{
+    background-color: rgb(255,0,255,0.5);
+    color: white;
+}
+.red{
+    background-color: #ff00ff;
+    color: rgb(255,255,255);
+}
+.h6{
+    background-color: hsl(120, 50%, 50%);
+    color: hsl(0, 100%, 50%);
+}
+body{
+    background-color: #000;
+}
+*/
+
+
+/* Box Model
+div{
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+h2{
+    border: solid 1px blue;
+    background-color: aqua;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+.red{
+    background-color: red;
+    border: 1px dotted black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin: 10px 20px 30px 40px;
+}
+#buttom{
+    border: 1px dotted black;
+    padding: 10px 20px 30px 40px;
+    background-color: yellow;
+}
+*/
+
+
+/* Text
+#buttom{
+    color: red;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-indent: 30px;
+    text-align: 1px;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    white-space:normal;
+}
+.small{
+    font-size: 0.6em;
+    background-color: yellow;
+    vertical-align: baseline;
+    text-decoration:line-through;
+}
+a{
+    text-decoration: none;
+    text-shadow: 5px 2px 5px black;
+}
+*/
+
+/* Font
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight:bold;
+    font-variant: small-caps;
+    font-size: 16px;
+}
+h1{
+    font-size: 12vw;
+    color: blue;
+    text-align: center;
+}
+.h6{
+    color: aquamarine;
+    font: italic bold 1.5em Arial;
+}
+#buttom{
+    font-size: 1.5em;
+}
+.bigger{
+    color: red;
+    font-size: 16px;
+}
+ */
+
+ /* Alink 
+ a{
+    color: red;
+ }
+a:visited{
+    color: chartreuse;
+}
+a:hover{
+    color: darkblue;
+}
+a:active{
+    color: darkmagenta;
+}
+h1{
+    background-color: black;
+    color: white;
+}
+h1:hover{
+    background-color: darkorange;
+}
+h1:active{
+    color: darkmagenta;
+}
+#buttom span:first-child{
+    color: red;
+}
+*/
+
+/*Display Properties
+li{
+    background-color: black;
+    display: inline-block;
+    padding: 20%;
+    padding: 10px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    display: block;
+}
+span{
+    visibility: hidden;
+    display: none;
+    border:1px solid black;
+    font-size: 1em;
+}
+*/
+
+/*Position Property 
+header{
+    background-color: rgb(255,0,0,5);
+    padding: 10px;
+    position: static;
+}
+header{
+    position: relative;
+}
+header{
+    position: fixed
+}
+header{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+}
+header{
+    position: sticky;
+}
+*/
+
+/*Float
+li{
+    float: left;
+    padding: 30px;
+}
+li{
+    float: left;
+}
+ul{
+    border: 1px solid black;
+    padding: 30px;
+}
+article{
+    width: 40%;
+    background: pink;
+    float: left;
+}
+aside{
+    width: 50%;
+    background:palevioletred;
+    float: left;
+}
+footer{
+    clear: both;
+    background: lightgrey;
+}
+*/
+/*Useful CSS Properties
+header{
+    outline-color:  magenta;
+    outline-width: 2px;
+    outline-style: solid;
+    border: 5px solid yellow;
+    max-width: 800px;
+    margin: auto;
+}
+ul{
+    outline: solid 2px green;
+    position: 0px;
+    left: 0px;
+    outline: solid 2px green;
+    background: midnightblue;
+}
+article{
+    background: red;
+    z-index: 5;
+}
+aside{
+    background: blue;
+    z-index: 5;
+}
+footer{
+    height: 100px;
+    width: 70%;
+    background: black;
+    color: white;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+*/
+/*Combinators
+header{
+    background-color: red;
+}
+article span{
+    background-color: yellow;
+}
+article > span{
+    background-color: yellow;
+}
+article >p+span{
+    background-color: green;
+}
+a[href="#2"]{
+    color: red;
+    background-color: orange;
+}*/
+
+/*Pseudo Elements
+article ::first-line{
+    color: blue;
+}
+article::first-letter{
+    color: red;
+    font-size: 3em;
+}
+article::before{
+    content: 'BEFORE';
+}
+article::after{
+    content: 'AfterE';
+}
+*/
+/*Creating a Website with Floating Elements
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color: paleturquoise;
+    width: 90%;
+    margin: auto;
+    font-size: 5vw;
+    text-align: center;
+}
+.main{
+    border: 1px solid black;
+    background-color: red;
+}
+.col{
+    float: left;
+    border: 1px solid black;
+}
+.main aside{
+    background-color: #ddd;
+    width: 20%;
+}
+.main article{
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+}
+ul{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+li:hover{
+    background-color: red;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+.main:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+    background-color: black;
+    color: white;
+}
+.footer a{
+    color: red;
+    text-decoration: none;
+}
+@media(max-width:640px){
+    body{
+        background-color: royalblue;
+    }
+    .main aside, .main article{
+        width: 100%;
+    }
+}*/
+/*Responsive Web Design using a Flexbox
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: indie flower;
+    background-color: white;
+}
+.header{
+    background-color: skyblue;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    padding: 5px;
+}
+li:hover{
+    background-color: steelblue;
+    color: white;
+}
+li:hover a{
+    color: white;
+}
+li a{
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main article{
+    flex: 3;
+    padding:10px
+}
+.main aside{
+    flex: 1;
+    text-align: center;
+}
+.col{
+    border: 1px solid black;
+}
+.footer{
+    background-color: slategrey;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+@media(main-width:640px){
+    body{
+        background-color: red;
+    }
+    .main{
+        flex-direction: row;
+    }
+    ul{
+        flex-direction: column;
+    }
+    li{
+        padding:10px;
+    }
+}*/
+/*Responsive Web Design using the CSS Grid*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header, .footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+.main{
+    display: grid;
+    grid-template-areas:  'cola colb colb colb colc';
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    display: block;
+    background-color: blue;
+    color: white;
+}
+.main aside:first-child{
+    grid-area: cola;
+    background-color: steelblue;
+}
+.main article{
+    grid-area: colb;
+    background-color: thistle;
+}
+.main aside:last-child{
+    grid-area: colc;
+    background-color: red;
+}
+.footer a{
+    text-decoration: none;
+    color: yellow;
+}
+@media(max-width:640px){
+    .main{
+        display: grid;
+        grid-template-areas:
+        'cola'
+        'colb'
+        'colc';
+    }
+}
+/*
+Lesson Summary
+Cascading Style Sheets, or CSS, are used to style HTML elements. A dot(.) is used when selecting elements based on class, while a hash (#) selects elements based on their ID.
+CSS styling could be applied using the ‘style’ tag,  linked to a separate sheet, or applied as an attribute. 
+Colours could be set using hex, rgb, or named values for the desired colour. The alpha in rgba or hex values sets the opacity of a colour.
+The CSS box model is used to define the space around an element and determine its layout on a page. Setting the overflow property to ‘hidden’ prevents an element from spilling over its parent container.
+If only one value is set for the margin property, it is evenly applied in all directions, around the object. 
+Fonts could be sourced from the default font families, or imported from third-party sources like Google Fonts. Links on a webpage could have four states; visited, hover, link or active.
+Pseudo-classes are used to add styling to a special state of an element. The position property can take one of five values; static, relative, fixed, absolute and sticky.
+The float property usually has a value of the right, left, inherit, or none. The z-index property specifies the stack order of an element. Combinators explain the relationship between elements that are being selected.
+Pseudo-elements select an element and only apply styling to a part of it. Some methods for creating responsive websites include floats, flexbox and the CSS Grid.
+*/
