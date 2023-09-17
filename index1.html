@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Page</title>
+        <style>
+            .blue{
+                color: blue;
+            }
+            .red{
+                color: black;
+            }
+
+            #myID{
+                color: black;
+            }
+            #myName{
+                color: red;
+            }
+            table, th ,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#buttom">Go to buttom</a>
+        <img width="200" src="download.png" alt="child">
+        <img width="400" src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png">
+        <ol type="i" start="20">
+            <li>One</li>
+            <li>Two</li>
+            <li>Tree</li>
+            <li>Four</li>
+            <li>Five</li> 
+            <li>New list
+                <lo>One</lo>
+                <lo>Two</lo>
+            </li>
+        </ol>
+        <ul style="list-style-type: style type disc;">
+            <li>One</li>
+            <li>Two</li>
+            <li>Tree</li>
+            <li>Four</li>
+            <li>Five</li>               
+        </ul>
+        <dl>
+            <dt>main1</dt>
+            <dd>One</dd>
+            <dd>Two</dd>
+            
+            <dt>main2</dt>
+            <dd>One</dd>
+            <dd>Two</dd>
+        </dl>
+        <div id="top" style="color: blue;">
+            <p id="myID">What      is <a href="http://www.google.com" target="_blank">HTML?</a></p>
+            <!-- target=_self, _blank-->
+            <p>HTML      (HyperText Markup Language) is a markup language that tells web browsers 
+                how to structure the       web pages you visit. It can be as complicated or as simple as the web developer wants it to be.
+                 HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. <br>
+                 The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+        </div>
+        <div style="color: red;">
+            <hr>
+            <p id="MyName">
+               <span>Note:     Tags</span> in HTML are not case-sensitive. <span>This means they</span> can be written in uppercase or lowercase. For example, 
+              <br> a title tag could be written as title, TITLE, Title, TiTlE, etc., 
+                and it will work. However, it is best practice to write all tags in lowercase for consistency and readability.
+            </p>
+        </div>
+        <div id="buttom">
+            <h2 class="blue">Heading 2</h2>
+            <h3 class="red">Heading 3</h3>
+            <h4 class="blue">Heading 4</h4>
+            <h5 class="red">Heading 5</h5>
+            <h6 class="blue">Heading 6</h6>
+            <p>Go to <a href="new.html">new page</a></p>
+            <p>end Email <a href="mailto:myemail@gmail.com">myemail@gmail.com</a></p>
+            <a href="#top">Go to top</a>
+        </div>
+        <!-- Comment-->
+
+        <!-- table-->
+        <table>
+            <colgroup>
+                <col span="2">
+                <col span="1" style="background-color: red;">
+            </colgroup>
+            <tr>
+                <th>Name</th>
+                <td>Chapter 1</td>
+                <td>Chapter 2</td>
+                <td>Chapter 3</td>
+                <td>Chapter 4</td>
+            </tr>
+            <tr>
+                <th> Laurence</th>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th> Join</th>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <th> Anne</th>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
