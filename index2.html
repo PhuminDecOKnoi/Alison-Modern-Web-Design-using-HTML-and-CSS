@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <head>
+        <title>Phumin Decoknoi Resume</title>
+        <style>
+            .footer{
+                text-align: center;
+                padding: 10px;
+                background-color:#ddd;
+            }
+            table{
+                width: 100%;
+                border: 1px solid black;
+            }
+            dt{
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            section{
+                padding: 10px;
+                border: 1px solid black;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        <p>
+        <h2>#HTML5</h2>
+        Learning Outcomes
+        On the successful completion of this module, you should be able to;
+        Describe the process for setting up an HTML project. 
+        Identify the must-have tags for designing a webpage using HTML.
+        Explain the function of the span tag.
+        Recall some self-closing tags.
+        Explain the importance of element attributes.
+        Discuss the process for adding lists to a website.
+        Outline the process for creating a table.
+        Identify some semantic elements.
+        </p>
+        <p>
+        <h2>Lesson Summary</h2>
+        An HTML website must have an HTML, body, title, and head tag. HTML elements are made of opening and closing tags, and the content to be displayed between them.
+        Naming the main HTML file ‘index.html’ gives a web server an indication of which file to run first. The doctype tells the browser the HTML version of a website and helps it interpret the HTML code.
+        While the body tag contains the content that is displayed on a webpage, the head tag is used to store information like the meta, which is not supposed to be seen by visitors.
+        The div tag is the main tag used to create and structure elements in HTML. Span tags are used to separate content, to make them easier to select.
+        There are six heading sizes, h1 to h6, which h1 being the largest. Self-closing tags like the line break and horizontal rule, do not require a closing tag.
+        Element attributes provide a browser with additional information about an HTML element. Anchor tags are used to add links to websites.
+        The image tag requires ‘source’ and ‘alt’ attributes. There are two major list types in HTML; ordered list and unordered list.
+        The table, table row, table head, and table data tags are required to create a table using HTML. Semantic elements clearly define the nature and purpose of webpage content.
+
+        </p>
+        -->
+        <header class="header">
+            <h1>Phumin Decoknoi Resume</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#exp">Eperience</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#int">Interests</a></li>
+                <li><a href="#ski">Skills</a></li>
+                <li><a href="#cont">Contact Me</a></li>
+            </ul>
+        </nav>
+        <article>
+            <p>Welcome to my website, hope you enjoy it</p>
+            <hr>
+            <p>My name is Phumin Decoknoi</p>
+            <img width="120" src="image_profile.JPG">
+        </article>
+        <section id="exp">
+            <h2>Eperience</h2>
+            <table>
+                <colgroup>
+                    <col span="1" style="background-color: #ddd;">
+                </colgroup>
+                <tr>
+                    <th>Company</th>
+                    <th>Details</th>
+                    <th>Years</th>
+                </tr>
+                <tr>
+                    <td>Justmine Company</td>
+                    <td>PHP Programmer</td>
+                    <td>2009-2010</td>
+                </tr>
+                <tr>
+                    <td>CPF (Thailand) Company Limited</td>
+                    <td>HR Manager</td>
+                    <td>2010-2022</td>
+                </tr>
+                <tr>
+                    <td>CPF (Thailand) Company Limited</td>
+                    <td>HR Consultant</td>
+                    <td>2022-2023</td>
+                </tr>
+            </table>
+        </section>
+        <section id="edu">
+            <h2>Education</h2>
+            <dl>
+                <dt>SWU University</dt>
+                <dd>Social Sience</dd>
+                <dt>Dgree</dt>
+                <dd>Politics</dd>
+            </dl>
+            <dl>
+                <dt>MUT University</dt>
+                <dd>MBA</dd>
+                <dt>Master Dgree</dt>
+                <dd>Digital Business Administration</dd>
+            </dl>
+        </section>
+        <section id="int">
+            <h2>Interests</h2>
+            <ul>
+                <li>Computers</li>
+                <li>HTML/CSS</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+        <section id="ski">
+        <h2>Skills</h2>
+            <ol>
+                <li>Node.js</li>
+                <li>Typescript</li>
+            </ol>
+        </section>
+        <section id="cont">
+        <h2>Contact Me</h2>
+            <p>
+                Contact me at my email <a href="mailto:phumin.dec@gmail.com">My Email Address</a>
+            </p>
+        </section>
+        <footer class="footer">Copyright (C) 2023 Phumin Decoknoi Resume
+            Phumin Decoknoi Content please contact me to find out more.
+        </footer>
+    </body>
+</html>
