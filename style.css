@@ -1,0 +1,32 @@
+/* .green{
+    background-color: green;
+}
+.h6{
+    display: block;
+    font-size: 0.67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+div div{
+background-color: red;
+}
+.blue{
+background-color:blueviolet;
+}
+#buttom{
+background-color: black;
+color: white;
+} */
+
+/*
+Comment
+*/
+body{
+    font-family:zc
+}
+h1,h6 ,h4{
+    background-color: purple
+}
