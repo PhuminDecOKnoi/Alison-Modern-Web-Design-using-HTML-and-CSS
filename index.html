@@ -1,23 +1,44 @@
 <!DOCTYPE html>
-    <hrad>
+    <head>
         <meta charset="utf-8">
         <title>My Page</title>
         <link rel="stylesheet" href="style.css"/>
-    </hrad>
+    </head>
     <body>
-        <div>
-            <h1 class="blue">Hello World</h1>
-            <div style="font-size: 2em;">Welcome to my site.</div>
-            <hr>
-            <p title="My Name"><span>Phumin</span><span>Decoknoi</span></p>
+        <header class="header"><h1>Welcome to my Website.</h1></header>
+        <div class="main">
+            <aside class="col">
+                <ul>
+                    <li><a href="#1">Home</a></li>
+                    <li><a href="#2">Service</a></li>
+                    <li><a href="#3">About</a></li>
+                    <li><a href="#4">Contact</a></li>
+                </ul>
+            </aside>
+            <article class="left col">
+                <h1 class="blue">Hello World!</h1>
+                <div style="font-size: 2em;">Welcome to my site.</div>
+                <hr>
+                <p title="My Name">My name is 
+                    <span>Phumin</span>
+                    <span class="red">Decoknoi</span>
+                </p>
+                <span class="bigger">Cascading Stylesheet</span>
+                -or CSS is used to style it and lay it out
+                alter the font, colorm size, and spacing
+                of your content,
+                <span>HTML</span> 
+                split ir into
+                <span>HTML</span>multi columns, or ass animations ans other
+                decorative features.<br><span>HTML</span>
+            </article>
+            <aside class="col">
+                side menu
+            </aside>
         </div>
-        <hr>
-        <h2 class="blue">Heading 2</h2>
-        <h4 class="red">Heading 4</h4>
-        <h6 class="green">Heading 6</h6>
-        <span class="h6">Heading 6 #2</span>
-        <div id="buttom">hello wolrd blah blah blah.<a href="#myID">Go to the top element with ID of myID</a>
-            <div class="green" style="background-color: blue;">Test div div tag</div>
-        </div>
+        <footer class="footer">Thanks for visiting Phumin Decoknoi<br>
+            <a href="#myID">Go to the top element with ID of myID</a>
+            <div>TEST</div>
+        </footer>
     </body>
 </html>
