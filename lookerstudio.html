@@ -1,6 +1,75 @@
-<html>
-    <head></head>
-    <body>
-        <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/b456e28b-f00c-47dd-8a66-0fdd5ce4d360/page/JlWdD" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </body>
+<!DOCTYPE html>
+<!--
+  ตัวอย่างการฝัง External Dashboard ด้วย iframe
+  ใช้สำหรับสอนเรื่อง iframe, responsive embed และ accessibility attribute
+-->
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ตัวอย่างการฝัง Google Looker Studio dashboard ด้วย iframe อย่างเป็นระบบ">
+  <title>Looker Studio Embed Example</title>
+  <style>
+    /*
+      CSS เฉพาะไฟล์ตัวอย่างนี้
+      ใช้ internal style ได้ในกรณี demo สั้น ๆ แต่ project จริงควรแยกไฟล์ CSS
+    */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f5f7fb;
+    }
+
+    .page {
+      width: min(100% - 2rem, 1100px);
+      margin: 0 auto;
+      padding: 3rem 0;
+    }
+
+    .embed-card {
+      background: #ffffff;
+      border: 1px solid #d9e2ec;
+      border-radius: 18px;
+      padding: 1rem;
+      box-shadow: 0 16px 40px rgba(15, 76, 129, 0.12);
+    }
+
+    .responsive-iframe {
+      width: 100%;
+      min-height: 70vh;
+      border: 0;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Looker Studio Dashboard Embed</h1>
+      <p>
+        ตัวอย่างนี้แสดงวิธีฝัง dashboard ภายนอกด้วย iframe พร้อม title,
+        loading และ referrer policy เพื่อให้โค้ดอ่านง่ายและเหมาะกับการสอน
+      </p>
+    </header>
+
+    <section class="embed-card" aria-labelledby="dashboard-title">
+      <h2 id="dashboard-title">Embedded Report</h2>
+
+      <iframe
+        class="responsive-iframe"
+        title="Embedded Looker Studio report"
+        src="https://lookerstudio.google.com/embed/reporting/b456e28b-f00c-47dd-8a66-0fdd5ce4d360/page/JlWdD"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+</body>
 </html>
