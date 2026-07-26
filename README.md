@@ -5,7 +5,7 @@
 ![Course Status](https://img.shields.io/badge/status-active-brightgreen)
 ![HTML](https://img.shields.io/badge/HTML5-semantic-orange)
 ![CSS](https://img.shields.io/badge/CSS3-responsive-blue)
-![License](https://img.shields.io/badge/license-Apache--2.0-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ---
 
@@ -47,7 +47,7 @@ Repository นี้จัดทำเป็นชุดบทเรียน **
 Alison-Modern-Web-Design-using-HTML-and-CSS/
 │
 ├── README.md                         # เอกสารหลักของ repository
-├── LICENSE                           # Apache License 2.0
+├── LICENSE                           # MIT License
 ├── .gitignore                        # ไฟล์ยกเว้นสิ่งที่ไม่ควร commit
 │
 ├── index.html                        # หน้า landing page หลักของหลักสูตร
@@ -218,4 +218,4 @@ Repository นี้ปรับให้เป็น **generic educational cour
 
 ## License
 
-This repository is released under the Apache License 2.0. See [LICENSE](LICENSE) for details.
+This repository is released under the MIT License. See [LICENSE](LICENSE) for details.
