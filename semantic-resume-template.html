@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--
+  Semantic Profile Template
+  จุดประสงค์: ใช้สอนการสร้างหน้า Profile/Resume แบบไม่ใส่ข้อมูลส่วนตัวจริง
+  หมายเหตุ: ผู้เรียนควรเปลี่ยนข้อมูลตัวอย่างเป็นข้อมูลสมมติหรือข้อมูลที่อนุญาตให้เผยแพร่ได้เท่านั้น
+-->
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ตัวอย่าง semantic HTML profile template สำหรับการเรียน HTML และ CSS">
+  <title>Semantic Profile Template</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f5f7fb;
+    }
+
+    .container {
+      width: min(100% - 2rem, 1000px);
+      margin: 0 auto;
+    }
+
+    .site-header,
+    .site-footer {
+      background: #0f4c81;
+      color: #ffffff;
+      padding: 2rem 0;
+    }
+
+    .navbar ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 1rem 0 0;
+      list-style: none;
+    }
+
+    .navbar a {
+      color: #ffffff;
+    }
+
+    main {
+      padding: 2rem 0;
+    }
+
+    section,
+    article {
+      background: #ffffff;
+      border: 1px solid #d9e2ec;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #d9e2ec;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    th {
+      background: #edf4fb;
+    }
+
+    @media (max-width: 640px) {
+      .navbar ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p><a href="index.html">← กลับหน้าแรก</a></p>
+      <h1>Semantic Profile Template</h1>
+      <p>ตัวอย่างหน้า Profile สำหรับฝึกใช้ Semantic HTML โดยไม่ใส่ข้อมูลส่วนตัวจริง</p>
+
+      <nav class="navbar" aria-label="เมนูโปรไฟล์ตัวอย่าง">
+        <ul>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article id="summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Professional Summary</h2>
+      <p>
+        Student Name เป็นตัวอย่างชื่อสมมติสำหรับฝึกสร้างหน้า profile โดยใช้ semantic structure,
+        table, list และ contact section อย่างเป็นระบบ
+      </p>
+    </article>
+
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <table>
+        <caption>ตัวอย่างตารางประสบการณ์แบบสมมติ</caption>
+        <thead>
+          <tr>
+            <th scope="col">Role</th>
+            <th scope="col">Details</th>
+            <th scope="col">Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frontend Student Project</td>
+            <td>Built a static landing page with HTML and CSS</td>
+            <td>2026</td>
+          </tr>
+          <tr>
+            <td>Course Workshop</td>
+            <td>Practiced semantic HTML and responsive layout</td>
+            <td>2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <dl>
+        <dt>Program</dt>
+        <dd>Bachelor-level Web Design Course</dd>
+        <dt>Focus</dt>
+        <dd>HTML5, CSS3, Responsive Design, Accessibility</dd>
+      </dl>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <ul>
+        <li>HTML document structure</li>
+        <li>Semantic HTML</li>
+        <li>CSS box model</li>
+        <li>Flexbox and Grid layout</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>
+        ใช้ข้อมูลสมมติในการฝึก เช่น
+        <a href="mailto:student@example.com">student@example.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Semantic Profile Template. Use dummy data for public repositories.</p>
+    </div>
+  </footer>
+</body>
+</html>
