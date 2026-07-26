@@ -1,46 +1,177 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>My Page</title>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-        <header class="header">
-            <h1>Welcome to my Website.</h1>
-        </header>
-        <div class="main">
-            <aside class="col">
-                <ul>
-                    <li><a href="#1">Home</a></li>
-                    <li><a href="#2">Service</a></li>
-                    <li><a href="#3">About</a></li>
-                    <li><a href="#4">Contact</a></li>
-                </ul>
-            </aside>
-            <article class="left col">
-                <h1 class="blue">Hello World!</h1>
-                <div style="font-size: 2em;">Welcome to my site.</div>
-                <hr>
-                <p title="My Name">My name is 
-                    <span>Phumin</span>
-                    <span class="red">Decoknoi</span>
-                </p>
-                <span class="bigger">Cascading Stylesheet</span>
-                -or CSS is used to style it and lay it out
-                alter the font, colorm size, and spacing
-                of your content,
-                <span>HTML</span> 
-                split ir into
-                <span>HTML</span>multi columns, or ass animations ans other
-                decorative features.<br><span>HTML</span>
-            </article>
-            <aside class="col">
-                side menu
-            </aside>
+<!--
+  หน้าแรกของหลักสูตร Modern Web Design using HTML and CSS
+  จุดประสงค์: ใช้เป็นตัวอย่างหน้า Landing Page ที่มีโครงสร้าง HTML5 ถูกต้อง
+  แนวทาง: ใช้ Semantic HTML, External CSS, Responsive Layout และ Accessibility พื้นฐาน
+-->
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <!-- รองรับภาษาไทยและอักขระพิเศษ -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ทำให้ layout ปรับตามขนาดหน้าจอ เช่น desktop, tablet และ mobile -->
+
+  <meta name="description" content="หลักสูตร Modern Web Design using HTML and CSS สำหรับผู้เริ่มต้น พร้อมตัวอย่างโค้ดและคอมเมนต์ภาษาไทย">
+  <!-- คำอธิบายหน้าเว็บ ใช้ช่วยทั้ง SEO และการทำความเข้าใจเนื้อหา -->
+
+  <title>Modern Web Design using HTML and CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--
+    header คือส่วนหัวของเว็บไซต์
+    ใช้เก็บชื่อเว็บ โลโก้ หรือเมนูนำทางหลัก
+  -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="เมนูหลักของเว็บไซต์">
+      <!-- class logo ใช้แสดงชื่อหลักสูตรหรือชื่อเว็บไซต์ -->
+      <a class="logo" href="#home">HTML & CSS Course</a>
+
+      <!-- เมนูนำทางภายในหน้าเดียวกัน ใช้ anchor link เชื่อมไปยัง section ต่าง ๆ -->
+      <ul class="nav-menu">
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#lessons">บทเรียน</a></li>
+        <li><a href="#standards">มาตรฐานโค้ด</a></li>
+        <li><a href="#assignment">งานมอบหมาย</a></li>
+        <li><a href="#contact">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main คือพื้นที่เนื้อหาหลักของหน้าเว็บ ควรมีหนึ่งครั้งต่อหนึ่งหน้า -->
+  <main id="home">
+    <!-- Hero section ใช้เปิดหน้าเว็บและสื่อสารคุณค่าหลักของหลักสูตร -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Undergraduate Web Design Course</p>
+        <h1 id="hero-title">Modern Web Design using HTML and CSS</h1>
+        <p class="hero-description">
+          เรียนรู้การสร้างเว็บไซต์แบบเป็นระบบ ตั้งแต่โครงสร้าง HTML5, Semantic HTML,
+          CSS Layout, Flexbox, Grid, Responsive Design และ Accessibility เบื้องต้น
+        </p>
+        <div class="hero-actions" aria-label="ปุ่มเริ่มต้นใช้งาน">
+          <a class="button button-primary" href="#lessons">ดูบทเรียน</a>
+          <a class="button button-secondary" href="html-elements-reference.html">ดู HTML Tag Reference</a>
         </div>
-        <footer class="footer">Thanks for visiting Phumin Decoknoi<br>
-            <a href="#myID">Go to the top element with ID of myID</a>
-            <div>TEST</div>
-        </footer>
-    </body>
+      </div>
+    </section>
+
+    <!-- Section แสดงเป้าหมายการเรียนรู้ -->
+    <section class="section" aria-labelledby="outcomes-title">
+      <div class="section-heading">
+        <p class="eyebrow">Learning Outcomes</p>
+        <h2 id="outcomes-title">สิ่งที่ผู้เรียนจะทำได้หลังเรียนจบ</h2>
+      </div>
+
+      <div class="card-grid three-columns">
+        <article class="card">
+          <h3>เขียน HTML ได้ถูกโครงสร้าง</h3>
+          <p>เข้าใจ `doctype`, `html`, `head`, `body`, metadata, heading และ semantic tags</p>
+        </article>
+        <article class="card">
+          <h3>ออกแบบ Layout ด้วย CSS</h3>
+          <p>ใช้ selector, box model, spacing, color system, Flexbox และ Grid ได้อย่างเป็นระบบ</p>
+        </article>
+        <article class="card">
+          <h3>สร้าง Responsive Website</h3>
+          <p>ทำให้หน้าเว็บรองรับ desktop, tablet และ mobile ด้วย media query และ flexible layout</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section แสดงแผนบทเรียน -->
+    <section id="lessons" class="section section-alt" aria-labelledby="lessons-title">
+      <div class="section-heading">
+        <p class="eyebrow">12-Week Plan</p>
+        <h2 id="lessons-title">โครงสร้างบทเรียน</h2>
+      </div>
+
+      <div class="lesson-list">
+        <article class="lesson-item"><span>01</span><strong>Introduction to Web, HTML, CSS</strong></article>
+        <article class="lesson-item"><span>02</span><strong>HTML Document Structure</strong></article>
+        <article class="lesson-item"><span>03</span><strong>Text, Links, Images, Lists</strong></article>
+        <article class="lesson-item"><span>04</span><strong>Semantic HTML</strong></article>
+        <article class="lesson-item"><span>05</span><strong>CSS Fundamentals</strong></article>
+        <article class="lesson-item"><span>06</span><strong>Box Model and Display</strong></article>
+        <article class="lesson-item"><span>07</span><strong>Flexbox Layout</strong></article>
+        <article class="lesson-item"><span>08</span><strong>CSS Grid Layout</strong></article>
+        <article class="lesson-item"><span>09</span><strong>Responsive Web Design</strong></article>
+        <article class="lesson-item"><span>10</span><strong>Forms and Accessibility</strong></article>
+        <article class="lesson-item"><span>11</span><strong>Mini Project Workshop</strong></article>
+        <article class="lesson-item"><span>12</span><strong>Presentation and Code Review</strong></article>
+      </div>
+    </section>
+
+    <!-- Section อธิบายมาตรฐานการเขียนโค้ด -->
+    <section id="standards" class="section" aria-labelledby="standards-title">
+      <div class="section-heading">
+        <p class="eyebrow">Coding Standards</p>
+        <h2 id="standards-title">มาตรฐานที่ใช้ใน Repository นี้</h2>
+      </div>
+
+      <div class="card-grid two-columns">
+        <article class="card">
+          <h3>HTML Standard</h3>
+          <ul class="check-list">
+            <li>ใช้ HTML5 document structure ครบถ้วน</li>
+            <li>ใช้ semantic tags ตามหน้าที่ของเนื้อหา</li>
+            <li>ใส่ `alt` ในรูปภาพ และ `label` ใน form</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>CSS Standard</h3>
+          <ul class="check-list">
+            <li>แยกไฟล์ CSS ออกจาก HTML</li>
+            <li>ใช้ CSS variables สำหรับสีและ spacing</li>
+            <li>ใช้ Grid/Flexbox แทน float สำหรับ layout หลัก</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section งานมอบหมาย -->
+    <section id="assignment" class="section section-alt" aria-labelledby="assignment-title">
+      <div class="section-heading">
+        <p class="eyebrow">Mini Project</p>
+        <h2 id="assignment-title">งานมอบหมายปลายบท</h2>
+      </div>
+      <div class="project-box">
+        <h3>สร้าง One-page Website ด้วย HTML และ CSS</h3>
+        <p>
+          ผู้เรียนต้องสร้างเว็บไซต์หนึ่งหน้า โดยมี header, hero section, content cards,
+          form, footer และ responsive layout พร้อมคอมเมนต์ภาษาไทยในส่วนสำคัญของโค้ด
+        </p>
+        <a class="button button-primary" href="semantic-resume-template.html">ดูตัวอย่าง Template</a>
+      </div>
+    </section>
+
+    <!-- Section ติดต่อ เป็นตัวอย่าง form ที่มี label ครบ -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow">Contact Form Example</p>
+        <h2 id="contact-title">ตัวอย่างฟอร์มติดต่อ</h2>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="fullname">ชื่อ-นามสกุล</label>
+        <input id="fullname" name="fullname" type="text" placeholder="กรอกชื่อ-นามสกุล" required>
+
+        <label for="email">อีเมล</label>
+        <input id="email" name="email" type="email" placeholder="example@email.com" required>
+
+        <label for="message">ข้อความ</label>
+        <textarea id="message" name="message" rows="5" placeholder="เขียนข้อความของคุณ" required></textarea>
+
+        <button type="submit">ส่งข้อความ</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- footer คือส่วนท้ายของเว็บไซต์ -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Modern Web Design using HTML and CSS. Educational use under Apache-2.0 License.</p>
+  </footer>
+</body>
 </html>
