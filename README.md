@@ -3,8 +3,8 @@
 > หลักสูตร HTML & CSS สำหรับผู้เริ่มต้นระดับปริญญาตรี พร้อมตัวอย่างโค้ดและคอมเมนต์ภาษาไทย เพื่อใช้เรียนรู้ ฝึกปฏิบัติ และเผยแพร่บน GitHub
 
 ![Course Status](https://img.shields.io/badge/status-active-brightgreen)
-![HTML](https://img.shields.io/badge/HTML5-semantic-orange)
-![CSS](https://img.shields.io/badge/CSS3-responsive-blue)
+![HTML](https://img.shields.io/badge/HTML-Living%20Standard-orange)
+![CSS](https://img.shields.io/badge/CSS-Snapshot%202026-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ---
@@ -13,13 +13,21 @@
 
 Repository นี้จัดทำเป็นชุดบทเรียน **Modern Web Design using HTML and CSS** สำหรับฝึกสร้างเว็บไซต์แบบ Static Website โดยเน้นมาตรฐานสำคัญ 5 ด้าน
 
-1. โครงสร้าง HTML5 ที่ถูกต้อง
+1. โครงสร้าง HTML5 / HTML Living Standard ที่ถูกต้อง
 2. การใช้ Semantic HTML ตามความหมายของเนื้อหา
 3. การเขียน CSS แยกไฟล์ อ่านง่าย และดูแลรักษาได้
 4. การจัด Layout ด้วย Flexbox และ CSS Grid
-5. Responsive Design และ Accessibility เบื้องต้น
+5. Responsive Design, Accessibility และ Browser Compatibility เบื้องต้น
 
 หลักสูตรนี้เหมาะสำหรับนักศึกษาระดับปริญญาตรี ผู้เริ่มต้นพัฒนาเว็บไซต์ และผู้สอนที่ต้องการนำเนื้อหาไปใช้เป็นเอกสารประกอบการสอน
+
+---
+
+## ⭐ Latest One-page Teaching Media
+
+| File | Description |
+|---|---|
+| [`ONE_PAGE_HTML_CSS_2026.md`](ONE_PAGE_HTML_CSS_2026.md) | สื่อการสอนแบบหน้าเดียว สังเคราะห์จากแหล่งสากลล่าสุดเกี่ยวกับ HTML Living Standard, CSS Snapshot 2026, MDN, web.dev, The Odin Project และ freeCodeCamp |
 
 ---
 
@@ -30,7 +38,7 @@ Repository นี้จัดทำเป็นชุดบทเรียน **
 | CLO | Learning Outcome |
 |---|---|
 | CLO 1 | อธิบายบทบาทของ HTML, CSS และ Web Browser ได้ |
-| CLO 2 | สร้าง HTML document structure ตามมาตรฐาน HTML5 ได้ |
+| CLO 2 | สร้าง HTML document structure ตามมาตรฐาน HTML5 / HTML Living Standard ได้ |
 | CLO 3 | ใช้ semantic tags เช่น `header`, `nav`, `main`, `section`, `article`, `footer` ได้ถูกต้อง |
 | CLO 4 | เขียน CSS selector, variable, spacing, typography และ color system ได้ |
 | CLO 5 | อธิบาย CSS Box Model และนำไปใช้จัดวาง UI ได้ |
@@ -50,12 +58,14 @@ Alison-Modern-Web-Design-using-HTML-and-CSS/
 ├── LICENSE                           # MIT License
 ├── .gitignore                        # ไฟล์ยกเว้นสิ่งที่ไม่ควร commit
 │
+├── ONE_PAGE_HTML_CSS_2026.md         # สื่อการสอนแบบหน้าเดียว อัปเดตตามแหล่งสากลล่าสุด
+├── COURSE_NOTES.md                   # สรุปบทเรียนและ checklist
+│
 ├── index.html                        # หน้า landing page หลักของหลักสูตร
 ├── style.css                         # stylesheet หลัก ใช้กับ index.html
 ├── html-elements-reference.html      # ตัวอย่าง HTML tags / lists / table / form
 ├── semantic-resume-template.html     # template สำหรับฝึก semantic profile page
 ├── lookerstudio.html                 # ตัวอย่างการฝัง dashboard ด้วย iframe
-├── COURSE_NOTES.md                   # สรุปบทเรียนและ checklist
 │
 └── assets/
     └── sample-image.svg              # รูปตัวอย่างสำหรับบทเรียน media element
@@ -111,6 +121,7 @@ Right click index.html → Open with Live Server
 
 | File | Purpose |
 |---|---|
+| `ONE_PAGE_HTML_CSS_2026.md` | One-page teaching media for latest HTML/CSS teaching approach |
 | `index.html` | หน้าเว็บหลักของ course landing page |
 | `style.css` | ระบบ style หลักของหน้าเว็บ |
 | `html-elements-reference.html` | ตัวอย่าง HTML elements สำหรับฝึก tag, list, table, form |
@@ -140,7 +151,7 @@ Right click index.html → Open with Live Server
 - ใช้ CSS variables สำหรับค่าสีและ spacing ที่ใช้ซ้ำ
 - ใช้ Flexbox/Grid แทน float สำหรับ layout หลัก
 - ใช้ media query เพื่อรองรับ mobile
-- หลีกเลี่ยง inline style ยกเว้นตัวอย่างเฉพาะทาง
+- ตรวจสอบ browser compatibility / Baseline ก่อนใช้ feature ใหม่
 - เขียนคอมเมนต์เพื่ออธิบายเหตุผลของส่วนสำคัญ
 
 ---
@@ -185,21 +196,6 @@ Right click index.html → Open with Live Server
 
 ---
 
-## 🧩 HTML Tag Reference Summary
-
-| Category | Examples | Purpose |
-|---|---|---|
-| Document | `html`, `head`, `body`, `title`, `meta`, `link` | โครงสร้างเอกสาร |
-| Semantic | `header`, `nav`, `main`, `section`, `article`, `aside`, `footer` | เพิ่มความหมายของเนื้อหา |
-| Text | `h1`-`h6`, `p`, `strong`, `em`, `mark`, `code` | จัดโครงสร้างข้อความ |
-| List | `ul`, `ol`, `li`, `dl`, `dt`, `dd` | สร้างรายการข้อมูล |
-| Media | `img`, `figure`, `figcaption`, `video`, `audio`, `iframe` | แสดงสื่อ |
-| Table | `table`, `caption`, `thead`, `tbody`, `tr`, `th`, `td` | แสดงข้อมูลแบบตาราง |
-| Form | `form`, `label`, `input`, `textarea`, `select`, `button` | รับข้อมูลจากผู้ใช้ |
-| Interactive | `details`, `summary`, `dialog` | เพิ่ม interaction เบื้องต้น |
-
----
-
 ## 🔐 Privacy and Safety Note
 
 Repository นี้ปรับให้เป็น **generic educational course repository** และหลีกเลี่ยงการใส่ข้อมูลส่วนตัวจริง เช่น ประวัติส่วนตัว เบอร์โทรศัพท์ อีเมลส่วนตัว หรือรูปภาพส่วนตัว เพื่อให้เหมาะกับการเผยแพร่สาธารณะบน GitHub
@@ -208,11 +204,13 @@ Repository นี้ปรับให้เป็น **generic educational cour
 
 ## 📚 References
 
-- MDN Web Docs. HTML: HyperText Markup Language. https://developer.mozilla.org/en-US/docs/Web/HTML
-- MDN Web Docs. CSS: Cascading Style Sheets. https://developer.mozilla.org/en-US/docs/Web/CSS
-- MDN Web Docs. Responsive design. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
-- W3C. Web Content Accessibility Guidelines (WCAG) 2.2. https://www.w3.org/TR/WCAG22/
 - WHATWG. HTML Living Standard. https://html.spec.whatwg.org/
+- W3C. CSS Snapshot 2026. https://www.w3.org/TR/css-2026/
+- MDN Web Docs. HTML reference. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
+- MDN Web Docs. Learn web development. https://developer.mozilla.org/en-US/docs/Learn_web_development
+- web.dev. Learn CSS. https://web.dev/learn/css
+- The Odin Project. Introduction to HTML and CSS. https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css
+- freeCodeCamp. Responsive Web Design Certification. https://www.freecodecamp.org/learn/2022/responsive-web-design/
 
 ---
 
