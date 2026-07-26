@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+  HTML Elements Reference
+  จุดประสงค์: ใช้เป็นไฟล์ตัวอย่างสำหรับสอน HTML tags พื้นฐาน
+  เน้น: โครงสร้างถูกต้อง, tag ใช้ตรงความหมาย, มี alt text, มี label, ไม่มี tag ผิดรูปแบบ
+-->
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ตัวอย่าง HTML elements สำหรับการเรียนรู้ text, links, images, lists, tables และ forms">
+  <title>HTML Elements Reference</title>
+  <style>
+    /* ใช้ internal CSS เพื่อให้ตัวอย่างนี้เปิดอ่านได้ในไฟล์เดียว */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f5f7fb;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(100% - 2rem, 1000px);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 3rem 0 1.5rem;
+    }
+
+    section {
+      background: #ffffff;
+      border: 1px solid #d9e2ec;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #d9e2ec;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    th {
+      background: #0f4c81;
+      color: #ffffff;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+
+    input,
+    textarea,
+    button {
+      width: 100%;
+      max-width: 520px;
+      padding: 0.75rem;
+      border: 1px solid #d9e2ec;
+      border-radius: 10px;
+      font: inherit;
+    }
+
+    button {
+      margin-top: 1rem;
+      background: #0f4c81;
+      color: #ffffff;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    code {
+      background: #edf4fb;
+      padding: 0.15rem 0.35rem;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p><a href="index.html">← กลับหน้าแรก</a></p>
+    <h1>HTML Elements Reference</h1>
+    <p>
+      ไฟล์นี้ใช้สำหรับสาธิต HTML elements ที่พบบ่อย โดยจัดกลุ่มเป็น text, link,
+      image, list, table และ form พร้อมคอมเมนต์ภาษาไทยในจุดสำคัญ
+    </p>
+  </header>
+
+  <main>
+    <section aria-labelledby="text-title">
+      <h2 id="text-title">1. Text Elements</h2>
+      <!-- h1-h6 ใช้จัดลำดับหัวข้อ ไม่ควรใช้เพียงเพราะต้องการขนาดตัวอักษร -->
+      <h3>ตัวอย่างหัวข้อย่อย</h3>
+      <p>
+        <strong>HTML</strong> ใช้กำหนดโครงสร้างและความหมายของเนื้อหา
+        ส่วน <em>CSS</em> ใช้ควบคุมรูปแบบการแสดงผล
+      </p>
+      <p>ตัวอย่าง code inline: <code>&lt;section&gt;</code></p>
+    </section>
+
+    <section aria-labelledby="link-title">
+      <h2 id="link-title">2. Links</h2>
+      <!-- rel="noopener noreferrer" ช่วยลดความเสี่ยงเมื่อเปิด link ใน tab ใหม่ -->
+      <p>
+        อ่านเพิ่มเติมที่
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+          MDN HTML Documentation
+        </a>
+      </p>
+    </section>
+
+    <section aria-labelledby="media-title">
+      <h2 id="media-title">3. Image and Figure</h2>
+      <figure>
+        <!-- alt อธิบายสาระของรูปภาพสำหรับผู้ใช้ screen reader หรือกรณีโหลดรูปไม่ได้ -->
+        <img src="assets/sample-image.svg" alt="ภาพตัวอย่างแสดงโครงสร้างเว็บไซต์ HTML และ CSS" width="420">
+        <figcaption>ตัวอย่างการใช้ <code>figure</code>, <code>img</code> และ <code>figcaption</code></figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="list-title">
+      <h2 id="list-title">4. Lists</h2>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>สร้างไฟล์ HTML</li>
+        <li>เชื่อมไฟล์ CSS</li>
+        <li>ทดสอบใน Browser</li>
+      </ol>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Semantic HTML</li>
+        <li>Responsive Design</li>
+        <li>Accessibility</li>
+      </ul>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Markup language สำหรับกำหนดโครงสร้างเว็บ</dd>
+        <dt>CSS</dt>
+        <dd>Stylesheet language สำหรับจัดรูปแบบหน้าเว็บ</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="table-title">
+      <h2 id="table-title">5. Table</h2>
+      <table>
+        <caption>ตารางตัวอย่างหัวข้อบทเรียน</caption>
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML Structure</td>
+            <td>Basic HTML page</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>CSS Fundamentals</td>
+            <td>Styled web page</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Responsive Layout</td>
+            <td>Mobile-friendly page</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">6. Form</h2>
+      <form action="#" method="post">
+        <!-- label ต้องเชื่อมกับ input ด้วย for และ id -->
+        <label for="student-name">ชื่อผู้เรียน</label>
+        <input id="student-name" name="student-name" type="text" required>
+
+        <label for="student-email">อีเมล</label>
+        <input id="student-email" name="student-email" type="email" required>
+
+        <label for="feedback">ข้อเสนอแนะ</label>
+        <textarea id="feedback" name="feedback" rows="4"></textarea>
+
+        <button type="submit">ส่งข้อมูล</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 HTML Elements Reference</p>
+  </footer>
+</body>
+</html>
