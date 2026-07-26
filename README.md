@@ -31,6 +31,25 @@ Repository นี้จัดทำเป็นชุดบทเรียน **
 
 ---
 
+## 📚 Enhanced Lessons 1–8
+
+> บทเรียน 1–8 ได้รับการปรับปรุงให้เป็น lesson pack แยกไฟล์ พร้อม lecture notes, code comments ภาษาไทย, workshop, common mistakes และ checklist
+
+| Week | Lesson | Focus | File |
+|---:|---|---|---|
+| 1 | Web Foundations and Tooling | HTML, CSS, Browser, VS Code, GitHub | [`lessons/week-01-web-foundations.md`](lessons/week-01-web-foundations.md) |
+| 2 | HTML Document Structure | `doctype`, `html`, `head`, `body`, metadata | [`lessons/week-02-html-document-structure.md`](lessons/week-02-html-document-structure.md) |
+| 3 | Text, Links, Images, Lists | content structure, link, image alt, lists | [`lessons/week-03-text-links-images-lists.md`](lessons/week-03-text-links-images-lists.md) |
+| 4 | Semantic HTML and Accessibility | landmarks, headings, ARIA เบื้องต้น | [`lessons/week-04-semantic-html-accessibility.md`](lessons/week-04-semantic-html-accessibility.md) |
+| 5 | CSS Fundamentals and Cascade | selectors, cascade, specificity, variables | [`lessons/week-05-css-fundamentals-cascade.md`](lessons/week-05-css-fundamentals-cascade.md) |
+| 6 | Box Model, Typography, Color | card, spacing, color, text readability | [`lessons/week-06-box-model-typography-color.md`](lessons/week-06-box-model-typography-color.md) |
+| 7 | Flexbox Layout | navbar, alignment, gap, responsive flex | [`lessons/week-07-flexbox-layout.md`](lessons/week-07-flexbox-layout.md) |
+| 8 | CSS Grid and Responsive Layout | card grid, `auto-fit`, `minmax()`, media | [`lessons/week-08-css-grid-responsive-layout.md`](lessons/week-08-css-grid-responsive-layout.md) |
+
+รวมหน้า index ของบทเรียน: [`lessons/README.md`](lessons/README.md)
+
+---
+
 ## 🎯 Learning Outcomes
 
 เมื่อเรียนจบ ผู้เรียนควรสามารถ
@@ -60,6 +79,17 @@ Alison-Modern-Web-Design-using-HTML-and-CSS/
 │
 ├── ONE_PAGE_HTML_CSS_2026.md         # สื่อการสอนแบบหน้าเดียว อัปเดตตามแหล่งสากลล่าสุด
 ├── COURSE_NOTES.md                   # สรุปบทเรียนและ checklist
+│
+├── lessons/                          # บทเรียน 1–8 แบบแยกไฟล์
+│   ├── README.md
+│   ├── week-01-web-foundations.md
+│   ├── week-02-html-document-structure.md
+│   ├── week-03-text-links-images-lists.md
+│   ├── week-04-semantic-html-accessibility.md
+│   ├── week-05-css-fundamentals-cascade.md
+│   ├── week-06-box-model-typography-color.md
+│   ├── week-07-flexbox-layout.md
+│   └── week-08-css-grid-responsive-layout.md
 │
 ├── index.html                        # หน้า landing page หลักของหลักสูตร
 ├── style.css                         # stylesheet หลัก ใช้กับ index.html
@@ -122,6 +152,8 @@ Right click index.html → Open with Live Server
 | File | Purpose |
 |---|---|
 | `ONE_PAGE_HTML_CSS_2026.md` | One-page teaching media for latest HTML/CSS teaching approach |
+| `lessons/README.md` | Index ของบทเรียน 1–8 |
+| `lessons/week-01...week-08.md` | บทเรียนแยกไฟล์ พร้อม code comments ภาษาไทย |
 | `index.html` | หน้าเว็บหลักของ course landing page |
 | `style.css` | ระบบ style หลักของหน้าเว็บ |
 | `html-elements-reference.html` | ตัวอย่าง HTML elements สำหรับฝึก tag, list, table, form |
@@ -150,7 +182,7 @@ Right click index.html → Open with Live Server
 - ใช้ class naming ที่อ่านง่าย
 - ใช้ CSS variables สำหรับค่าสีและ spacing ที่ใช้ซ้ำ
 - ใช้ Flexbox/Grid แทน float สำหรับ layout หลัก
-- ใช้ media query เพื่อรองรับ mobile
+- ใช้ media query หรือ fluid layout เพื่อรองรับ mobile
 - ตรวจสอบ browser compatibility / Baseline ก่อนใช้ feature ใหม่
 - เขียนคอมเมนต์เพื่ออธิบายเหตุผลของส่วนสำคัญ
 
@@ -174,7 +206,7 @@ Right click index.html → Open with Live Server
 | Semantic HTML | ใช้ semantic tags อย่างน้อย 5 tag |
 | External CSS | ใช้ไฟล์ CSS แยกต่างหาก |
 | Layout | ใช้ Flexbox หรือ Grid อย่างน้อย 1 จุด |
-| Responsive | มี media query อย่างน้อย 1 breakpoint |
+| Responsive | มี media query หรือ fluid responsive grid อย่างน้อย 1 จุด |
 | Form | มี form พร้อม label และ required field |
 | Accessibility | มี alt text และ focus style พื้นฐาน |
 | Comments | มี code comments ภาษาไทยในส่วนสำคัญ |
@@ -208,6 +240,7 @@ Repository นี้ปรับให้เป็น **generic educational cour
 - W3C. CSS Snapshot 2026. https://www.w3.org/TR/css-2026/
 - MDN Web Docs. HTML reference. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
 - MDN Web Docs. Learn web development. https://developer.mozilla.org/en-US/docs/Learn_web_development
+- MDN Curriculum. https://developer.mozilla.org/en-US/curriculum/
 - web.dev. Learn CSS. https://web.dev/learn/css
 - The Odin Project. Introduction to HTML and CSS. https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css
 - freeCodeCamp. Responsive Web Design Certification. https://www.freecodecamp.org/learn/2022/responsive-web-design/
